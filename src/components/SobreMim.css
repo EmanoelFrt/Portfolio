@@ -2,20 +2,27 @@
     width: 100%;    
     height: 100vh; /* Ocupa a altura total da tela */
     text-align: left;
+    display: flex;
+    flex-direction: row; /* Mudamos de column para row para alinhar a imagem à esquerda */
+    align-items: center;
     position: relative; /* Define a posição relativa para o container principal */
   }
 
-  .sobre-mim h1 {
-    font-size: clamp(1em, 1em + 1vw, 2.5em); /* Usando a função clamp para controlar o tamanho da fonte */
-    text-align: center; /* Centraliza o título */
+  .text-container {
+    flex: 1; /* Ocupa todo o espaço disponível no container .sobre-mim */
+    text-align: center; /* Centraliza o conteúdo dentro do container */
+    padding: 0 20px; /* Espaçamento interno para melhor leitura */
   }
   
-  .sobre-mim p {
-    text-align: justify; /* Justifica o texto */
+  .text-container h1 {
+    font-size: clamp(1em, 1em + 1vw, 2.5em);
+  }
+  
+  .text-container p {
+    text-align: justify;
+    max-width: 800px;
     margin: auto; /* Centraliza o conteúdo horizontalmente */
-    max-width: 800px; /* Define uma largura máxima para o texto */
-    padding: 0 20px; /* Adiciona um espaçamento interno para melhor leitura */
-    font-size: clamp(0.5em, 1em + 0.5vw, 2.5em); /* Usando a função clamp para controlar o tamanho da fonte */
+    font-size: clamp(0.5em, 1em + 0.5vw, 2.5em);
   }
   
   .logo-container-left {
@@ -67,6 +74,7 @@
 @media screen and (max-width: 1500px) {
   .logo-container-right,
   .logo-container-left {
+    top: 40%;
     max-width: 200px;
   }
 }
@@ -75,7 +83,7 @@
 @media screen and (max-width: 1250px) {
   .logo-container-right,
   .logo-container-left {
-    margin-top: 130px;    
+    top: 65%;
     max-width: 500px;
   }
 }
@@ -83,14 +91,14 @@
 @media screen and (max-width: 950px) {
   .logo-container-left,
   .logo-container-right {
+    top: 65%;
     left: 50%; /* Centraliza horizontalmente */
     flex-wrap: nowrap;
     transform: translateX(-50%); /* Centraliza horizontalmente */
-    margin-top: 130px; /* Ajuste a margem superior conforme necessário para centralizar verticalmente */
     max-width: 500px; /* Ajuste a largura máxima conforme necessário */
   }
 
   .logo-container-right {
-    margin-top: 230px; /* Ajuste a margem superior conforme necessário para centralizar verticalmente */
+    top: 75%;
   }
 }

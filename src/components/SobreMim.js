@@ -13,8 +13,7 @@ import Logo_nodejs from '../assets/img/logo-nodejs.png';
 
 const SobreMim = () => {
   return (
-    <div className="sobre-mim">
-      <h1>Sobre mim</h1>
+    <div className="sobre-mim">      
       <div className="logo-container-left">
         <div className="logo-sobre-mim">
           <img src={Logo_csharp}/>
@@ -48,13 +47,16 @@ const SobreMim = () => {
         <div className="logo-sobre-mim">
           <img src={Logo_nodejs}/>
         </div>
+      </div>            
+      <div className="text-container">
+        <h1>Sobre mim</h1>
+        <p>
+          Sou desenvolvedor Delphi, .Net e AWS há 4 anos. Como freelancer,
+          participei de projetos em .Net, Python e React. Sempre foco no
+          desempenho de minhas aplicações e na interface amigável para o
+          usuário.
+        </p>
       </div>
-      <p>
-        Sou desenvolvedor Delphi, .Net e AWS há 4 anos. Como freelancer,
-        participei de projetos em .Net, Python e React. Sempre foco no
-        desempenho de minhas aplicações e na interface amigável para o
-        usuário.
-      </p>
     </div>
   );
 };
