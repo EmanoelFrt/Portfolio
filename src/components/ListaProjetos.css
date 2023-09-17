@@ -1,0 +1,8 @@
+/* ListaProjetos.css (opcional) */
+.projeto-list {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }

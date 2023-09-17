@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import Banner from './components/Banner/Banner';
+import Header from './components/Header';
+import ListaProjetos from './components/ListaProjetos';
+import SobreMim from './components/SobreMim';
 
 function App() {
+
+  const [ativaCor, setAtivaCor] = useState(false);
+
+  const projetos = [
+    {
+      imageSrc: 'FotoBanner_old.jpg',
+    },
+    {
+      imageSrc: 'FotoBanner_old.jpg',
+    },
+    // Adicione mais projetos conforme necessário
+  ];
+  
+  useEffect(function(){
+    function posicaoScroll(){
+      if(window.scrollY > 40){
+        setAtivaCor(true);
+      } else {
+        setAtivaCor(false);
+      }
+
+    }
+
+    window.addEventListener('scroll', posicaoScroll);
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header acao={ativaCor} />
+      <Banner/>
+      <SobreMim/>
+      <ListaProjetos projetos={projetos}/>
     </div>
   );
 }

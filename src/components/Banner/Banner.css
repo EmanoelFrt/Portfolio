@@ -1,0 +1,81 @@
+.banner {
+  background-color: #000; /* Fundo preto */
+  width: 100%; /* Ocupa toda a largura da tela */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  display: flex;
+  flex-direction: row; /* Mudamos de column para row para alinhar a imagem à esquerda */
+  align-items: center;
+  justify-content: flex-start; /* Alinhamos à esquerda */
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+}
+
+.banner-image {
+  width: auto; /* Manter a proporção original da imagem */
+  height: 100%; /* Ocupar a altura inteira do container */
+  object-fit: cover; /* Redimensionar a imagem para cobrir a altura */
+  object-position: left; /* Alinhar a imagem à esquerda */
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  color: white; /* Cor do texto */
+}
+
+.banner-text h1 {
+  font-size: 24px; /* Tamanho da fonte do título */
+  margin: 0; /* Remover margem padrão */
+  font-size: clamp(1em, 1em + 1vw, 2.5em); /* Usando a função clamp para controlar o tamanho da fonte */
+}
+
+.banner-text p {
+  font-size: 16px; /* Tamanho da fonte do parágrafo */
+  margin: 0; /* Remover margem padrão */
+  font-size: clamp(1em, 1em + 1vw, 2.5em); /* Usando a função clamp para controlar o tamanho da fonte */
+}
+
+.typing-text p {
+  overflow: hidden; /* Oculta o texto que está "digitando" */
+  border-right: 3px solid white; /* Adiciona um cursor piscando */
+  white-space: nowrap; /* Impede quebrar linhas */
+  margin: 0;
+  padding: 0;
+  animation: typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+/* Ocultar a imagem em telas menores */
+@media screen and (max-width: 1658px) {
+  .banner-image {
+    display: none;
+  }
+  .banner-text {
+    width: 100%; /* Ocupar toda a largura disponível */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar horizontalmente */
+    justify-content: center; /* Centralizar verticalmente */
+  }
+}
