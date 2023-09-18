@@ -67,7 +67,7 @@
 }
 
 /* Ocultar a imagem em telas menores */
-@media screen and (max-width: 1658px) {
+@media screen and (max-width: 1680px) {
   .banner-image {
     display: none;
   }
