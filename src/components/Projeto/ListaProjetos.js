@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Projeto from './Projeto';
-import Modal from './Modal'; // Importe o componente Modal
+import Projeto from './Projeto.js';
+import Modal from './ModalProjeto.js'; // Importe o componente Modal
 import './ListaProjetos.css';
 
 const ListaProjetos = ({ projetos }) => {
@@ -19,19 +19,22 @@ const ListaProjetos = ({ projetos }) => {
   };
 
   return (
-    <div className="projeto-list">
-      {projetos.map((projeto, index) => (
-        <Projeto
-          key={index}
-          imageSrc={projeto.imageSrc}
-          onClick={() => handleProjetoClick(index)}
-        />
-      ))}
+    <div>
+      <h1>Projetos</h1>
+      <div className="projeto-list">
+        {projetos.map((projeto, index) => (
+          <Projeto
+            key={index}
+            imageSrc={projeto.imageSrc}
+            onClick={() => handleProjetoClick(index)}
+          />
+        ))}
 
-      {/* Renderize o modal com base no estado */}
-      {modalAberto && (
-        <Modal projeto={projetoSelecionado} onClose={handleCloseModal} />
-      )}
+        {/* Renderize o modal com base no estado */}
+        {modalAberto && (
+          <Modal projeto={projetoSelecionado} onClose={handleCloseModal} />
+        )}
+      </div>
     </div>
   );
 };

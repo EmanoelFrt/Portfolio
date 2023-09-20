@@ -1,15 +1,15 @@
 import React from 'react';
 import './SobreMim.css';
-import Logo_csharp from '../assets/img/logo-csharp.png';
-import Logo_dotnet from '../assets/img/logo-dotnet.png';
-import Logo_delphi from '../assets/img/logo-delphi.png';
-import Logo_sql from '../assets/img/logo-sql.png';
-import Logo_git from '../assets/img/logo-git.png';
-import Logo_aws from '../assets/img/logo-aws.png';
-import Logo_python from '../assets/img/logo-python.png';
-import Logo_javascript from '../assets/img/logo-javascript.png';
-import Logo_react from '../assets/img/logo-react.png';
-import Logo_nodejs from '../assets/img/logo-nodejs.png';
+import Logo_csharp from '../../assets/img/logo-csharp.png';
+import Logo_dotnet from '../../assets/img/logo-dotnet.png';
+import Logo_delphi from '../../assets/img/logo-delphi.png';
+import Logo_sql from '../../assets/img/logo-sql.png';
+import Logo_git from '../../assets/img/logo-git.png';
+import Logo_aws from '../../assets/img/logo-aws.png';
+import Logo_python from '../../assets/img/logo-python.png';
+import Logo_javascript from '../../assets/img/logo-javascript.png';
+import Logo_react from '../../assets/img/logo-react.png';
+import Logo_nodejs from '../../assets/img/logo-nodejs.png';
 
 const SobreMim = () => {
   return (

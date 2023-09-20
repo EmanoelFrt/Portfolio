@@ -1,7 +1,7 @@
-
 .projeto {
-  width: 30%; /* Largura inicial em relação à largura do container pai */
-  height: 30%; /* Largura inicial em relação à largura do container pai */
+  width: 400px;
+  height: 250px; /* Define a altura fixa ou ajuste conforme necessário */
+  margin: 10px; /* Adicione margens para o espaçamento entre os elementos */
   border: 2px solid #333;
   cursor: pointer;
   display: flex;

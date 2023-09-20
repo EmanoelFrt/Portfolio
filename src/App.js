@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Banner from './components/Banner/Banner';
 import Header from './components/Header';
-import ListaProjetos from './components/ListaProjetos';
-import SobreMim from './components/SobreMim';
+import ListaProjetos from './components/Projeto/ListaProjetos';
+import SobreMim from './components/SobreMim/SobreMim';
+import './components/ScrollBar.css';
 
 function App() {
 
@@ -16,6 +17,19 @@ function App() {
       descricao: 'Teste',
       nome: 'Teste Nome'
     },
+    {
+      imageSrc: 'FotoBanner_old.jpg',
+      imageGif: 'animated.gif',
+      descricao: 'Teste',
+      nome: 'Teste Nome'
+    },
+    {
+      imageSrc: 'FotoBanner_old.jpg',
+      imageGif: 'animated.gif',
+      descricao: 'Teste',
+      nome: 'Teste Nome'
+    },
+    ,
     {
       imageSrc: 'FotoBanner_old.jpg',
       imageGif: 'animated.gif',

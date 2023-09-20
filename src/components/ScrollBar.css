@@ -1,0 +1,15 @@
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+  }
+  
+  /* Estilizando o traço da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background: #232323; /* Cor da barra de rolagem */
+    border-radius: 5px; /* Raio das bordas da barra de rolagem */
+  }
+  
+  /* Estilizando a área de rolagem (traseira) */
+  ::-webkit-scrollbar-track {
+    background: black; /* Cor de fundo da área de rolagem */
+  }
