@@ -1,0 +1,78 @@
+
+  
+  /* Modal Overlay */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px); /* Adiciona o efeito de blur */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Certifique-se de que o modal esteja na frente de outros elementos */
+    color: black;
+  }
+  
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 1000px;
+    max-height: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative; /* Defina a posição relativa no modal */
+  }
+
+.modal-gif {
+    display: block; /* Garante que a margem horizontal seja aplicada corretamente */
+    margin: 0 auto; /* Centraliza horizontalmente a imagem */
+    width: 100%; /* Limita a largura máxima da imagem a 50% do modal */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+/* Estilize o botão de fechar */
+.modal-close-button {
+    position: absolute; /* Define a posição absoluta */
+    top: 10px; /* Ajusta a distância do topo (ajuste conforme necessário) */
+    right: 10px; /* Ajusta a distância da direita (ajuste conforme necessário) */
+    background-color: #ff0000; /* Cor do botão de fechar (pode ser personalizado) */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1; /* Coloca o botão acima do conteúdo do modal */
+  }
+
+/* Modal Close Button Hover State */
+.modal-close-button:hover {
+    background-color: #cc0000; /* Cor do botão de fechar no hover (pode ser personalizado) */
+}
+  
+
+/* Estilize a classe .modal-flex-container */
+.modal-flex-container {
+    display: flex;
+    justify-content: space-between; /* Divide o espaço disponível igualmente entre as partes */
+  }
+  
+  /* Estilize a classe .modal-left (parte esquerda) */
+  .modal-left {
+    flex: 1; /* A parte esquerda ocupa o mesmo espaço da parte direita */
+  }
+  
+  /* Estilize a classe .modal-right (parte direita) */
+  .modal-right {
+    flex: 1; /* A parte direita ocupa o mesmo espaço da parte esquerda */
+    display: flex;
+    flex-direction: column; /* Empilhe os elementos verticalmente */
+    justify-content: center; /* Centralize verticalmente */
+    align-items: center; /* Centralize horizontalmente */
+  }

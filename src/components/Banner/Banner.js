@@ -1,6 +1,6 @@
 import React from 'react';
 import './Banner.css';
-import FotoBanner from '../../assets/img/FotoBanner_novo.jpg'; // Importe a imagem corretamente
+import FotoBanner from '../../assets/img/FotoBanner.jpg'; // Importe a imagem corretamente
 
 function Banner() {
   return (

@@ -2,6 +2,7 @@
   background-color: #000; /* Fundo preto */
   width: 100%; /* Ocupa toda a largura da tela */
   height: 100vh; /* Ocupa toda a altura da tela */
+  min-height: 800px;
   display: flex;
   flex-direction: row; /* Mudamos de column para row para alinhar a imagem à esquerda */
   align-items: center;
@@ -9,8 +10,7 @@
 }
 
 .banner-content {
-  display: flex;
-  align-items: center;
+  position: relative;
 }
 
 .banner-image {

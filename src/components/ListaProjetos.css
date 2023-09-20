@@ -1,8 +1,10 @@
-/* ListaProjetos.css (opcional) */
 .projeto-list {
-    margin: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
+  margin-top: 10px;
+  height: 100vh;
+  min-height: 800px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}

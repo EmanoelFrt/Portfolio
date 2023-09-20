@@ -12,9 +12,15 @@ function App() {
   const projetos = [
     {
       imageSrc: 'FotoBanner_old.jpg',
+      imageGif: 'animated.gif',
+      descricao: 'Teste',
+      nome: 'Teste Nome'
     },
     {
       imageSrc: 'FotoBanner_old.jpg',
+      imageGif: 'animated.gif',
+      descricao: 'Teste',
+      nome: 'Teste Nome'
     },
     // Adicione mais projetos conforme necessário
   ];

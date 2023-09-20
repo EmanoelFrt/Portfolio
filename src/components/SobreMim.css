@@ -1,6 +1,7 @@
 .sobre-mim {
   width: 98%;    
   height: 100vh; /* Ocupa a altura total da tela */
+  min-height: 800px;
   text-align: left;
   display: flex;
   flex-direction: row; /* Mudamos de column para row para alinhar a imagem à esquerda */
@@ -72,9 +73,12 @@
   .sobre-mim {
     display: inline-grid;
   }
+}
 
+/* Ocultar a imagem em telas menores */
+@media screen and (max-width: 1000px) {
   .logo-container-left,
   .logo-container-right {
-    max-width: 100%;
+    max-width: 95%;
   }
 }

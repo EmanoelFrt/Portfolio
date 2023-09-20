@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Projeto from './Projeto';
-import './ListaProjetos.css'; // Importe os estilos
+import Modal from './Modal'; // Importe o componente Modal
+import './ListaProjetos.css';
 
 const ListaProjetos = ({ projetos }) => {
+  const [modalAberto, setModalAberto] = useState(false); // Estado para controlar se o modal está aberto
+  const [projetoSelecionado, setProjetoSelecionado] = useState(null); // Estado para armazenar o projeto selecionado
+
   const handleProjetoClick = (index) => {
-    // Implemente a lógica que deseja executar ao clicar em um retângulo.
-    console.log(`Clicou no retângulo ${index}`);
+    // Quando um projeto for clicado, atualize o estado do modal
+    setProjetoSelecionado(projetos[index]);
+    setModalAberto(true);
+  };
+
+  const handleCloseModal = () => {
+    // Função para fechar o modal
+    setModalAberto(false);
   };
 
   return (
@@ -17,6 +27,11 @@ const ListaProjetos = ({ projetos }) => {
           onClick={() => handleProjetoClick(index)}
         />
       ))}
+
+      {/* Renderize o modal com base no estado */}
+      {modalAberto && (
+        <Modal projeto={projetoSelecionado} onClose={handleCloseModal} />
+      )}
     </div>
   );
 };
