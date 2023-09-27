@@ -26,6 +26,7 @@ const ListaProjetos = ({ projetos }) => {
           <Projeto
             key={index}
             imageSrc={projeto.imageSrc}
+            imageSrc2={projeto.imageSrc2}
             onClick={() => handleProjetoClick(index)}
           />
         ))}

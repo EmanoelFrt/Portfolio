@@ -26,6 +26,37 @@
   font-size: clamp(0.5em, 1em + 0.5vw, 2.5em);
 }
 
+.text-container button {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilização quando o cursor está sobre o botão */
+.text-container button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilização quando o botão é clicado */
+.text-container button:active {
+  background-color: #1c87c9;
+}
+
+/* Estilização quando o botão está desativado */
+.text-container button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
 .logo-container-left {
   display: flex;
   max-width: 300px;

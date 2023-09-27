@@ -12,6 +12,21 @@ import Logo_react from '../../assets/img/logo-react.png';
 import Logo_nodejs from '../../assets/img/logo-nodejs.png';
 
 const SobreMim = () => {
+  const handleDownload = () => {
+    // URL do arquivo que você deseja baixar
+    const fileUrl = 'https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png';
+
+    // Cria um elemento <a> oculto para iniciar o download
+    const a = document.createElement('a');
+    a.style.display = 'none';
+    a.target = '_blank';
+    a.href = fileUrl;
+    a.download = 'imagem.jpg'; // Nome do arquivo a ser baixado
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+
   return (
     <div className="sobre-mim">      
       <div className="logo-container-left">
@@ -39,6 +54,7 @@ const SobreMim = () => {
           desempenho de minhas aplicações e na interface amigável para o
           usuário.
         </p>
+        <button onClick={handleDownload}>Baixar Currículo</button>
       </div>
       <div className="logo-container-right">
         <div className="logo-sobre-mim">
