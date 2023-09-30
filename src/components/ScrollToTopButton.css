@@ -1,0 +1,41 @@
+/* ScrollToTopButton.css */
+@import "~font-awesome/css/font-awesome.css";
+/* Estilo base do botão */
+.scroll-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 1;
+    transition: background-color 0.3s;
+  }
+
+  .scroll-to-top-arrow {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Estilo quando o botão é visível */
+  .scroll-to-top-button.visible {
+    display: block;
+  }
+  
+  /* Estilo do botão ao passar o mouse sobre ele */
+  .scroll-to-top-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo do ícone da seta para cima */
+  .scroll-to-top-button i {
+    font-size: 24px;
+  }

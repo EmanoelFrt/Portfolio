@@ -22,19 +22,24 @@
 .banner-text {
   display: flex;
   flex-direction: column;
-  color: white; /* Cor do texto */
 }
 
 .banner-text h1 {
   font-size: 24px; /* Tamanho da fonte do título */
   margin: 0; /* Remover margem padrão */
   font-size: clamp(1em, 1em + 1vw, 2.5em); /* Usando a função clamp para controlar o tamanho da fonte */
+  color: rgba(255, 255, 255, 0.90);
 }
 
 .banner-text p {
   font-size: 16px; /* Tamanho da fonte do parágrafo */
   margin: 0; /* Remover margem padrão */
   font-size: clamp(1em, 1em + 1vw, 2.5em); /* Usando a função clamp para controlar o tamanho da fonte */
+  font-weight: bold;
+  background: linear-gradient(to right, rgba(40, 122, 222, 0.613), rgb(40, 122, 222)); /* Substitua as cores pelos valores desejados */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .typing-text p {
@@ -61,12 +66,12 @@
     border-color: transparent;
   }
   50% {
-    border-color: white;
+    border-color: rgb(40, 122, 222);
   }
 }
 
 /* Ocultar a imagem em telas menores */
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1850px) {
   .banner-image {
     display: none;
   }

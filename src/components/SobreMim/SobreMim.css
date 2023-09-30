@@ -24,6 +24,7 @@
   max-width: 800px;
   margin: auto; /* Centraliza o conteúdo horizontalmente */
   font-size: clamp(0.5em, 1em + 0.5vw, 2.5em);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .text-container button {
@@ -31,7 +32,7 @@
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #3498db;
+  background-color: rgb(40, 122, 222);
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -43,7 +44,7 @@
 
 /* Estilização quando o cursor está sobre o botão */
 .text-container button:hover {
-  background-color: #2980b9;
+  background-color: #0056b3;
 }
 
 /* Estilização quando o botão é clicado */

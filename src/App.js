@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Banner from './components/Banner/Banner';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import ListaProjetos from './components/Projeto/ListaProjetos';
 import SobreMim from './components/SobreMim/SobreMim';
+import Footer from './components/Footer/Footer';
+import ScrollToTopButton from './components/ScrollToTopButton';
 import './components/ScrollBar.css';
 
 function App() {
@@ -14,42 +16,56 @@ function App() {
     {
       imageSrc: 'Projeto-RemoteDesktopManager.jpg',
       imageGif: 'RemoteDesktopManager.gif',
+      nome: 'Remote Desktop Manager',
       descricao: 'Aplicativo utilizado para conectar e gerenciar a Conexão de Área de Trabalho Remota do Windows.',
-      funcionalidades:`• Inlcluir/Alterar/Excluir clientes e acessos.
+      funcionalidades:`• Incluir/Alterar/Excluir clientes e acessos.
                        • Conectar a uma área de trabalho remota via mtsc.exe.
                        • Visualização de acesso de cada usuário.`,
-      nome: 'Remote Desktop Manager',
       tecnologias: 'Delphi, SQL e Firebird.',
       linkGithub: 'https://github.com/EmanoelFrt/RemoteDesktopManager' 
     },
     {
       imageSrc: 'Projeto-SyncSistemas.jpg',
       imageGif: 'SyncSistemas.gif',
+      nome: 'Sync Sistemas',
+      descricao: 'Sistema ERP/PDV financeiro totalmente desenvolvido em .NET.',
       funcionalidades:`• Realizar Vendas.
                        • Gestão Financeira.
                        • Controle de Estoque.
                        • Emissão e Envio de NF-e e NFC-e.
                        • Impressão de Relatórios Gerencias.`,
-      descricao: 'Sistema ERP/PDV financeiro totalmente desenvolvido em .NET.',
       tecnologias: '.NET, C#, AWS, SQL, PostgreSQL.',
-      nome: 'Sync Sistemas'
     },
     {
       imageSrc: 'Projeto-SmartSchool.jpg',
       imageGif: 'SmartSchool.gif',
+      nome: 'Smart School',
+      descricao: 'Sistema de presença automatizada por reconhecimento facial em um ambiente escolar. Desenvolvido como projeto de conclusão de curso.',
       funcionalidades:`• Cadastrar Alunos.
                        • Efetuar a Chamada automaticamente utilizando reconhecimento facial.
                        • Impressão de Relatórios Gerencias.`,
-      descricao: 'Sistema de presença automatizada por reconhecimento facial em um ambiente escolar. Desenvolvido como projeto de conclusão de curso.',
-      tecnologias: '.NET, C#, SQL, PostgreSQL, I.A., Python.',
-      nome: 'Smart School'
+      tecnologias: '.NET, C#, SQL, PostgreSQL, I.A., Python.'
     },
     {
-      imageSrc: 'FotoBanner_old.jpg',
-      imageGif: 'animated.gif',
-      descricao: 'Teste',
-      nome: 'Teste Nome'
+      imageSrc: 'Projeto-PyTrello.jpg',
+      imageGif: 'PyTrello.gif',
+      nome: 'PyTrello',
+      descricao: 'Esta API é utilizada para interagir com cards de um determinado board do Trello.',
+      funcionalidades:`• Efetuar conexão com um Board.
+                       • Incluir/Alterar/Excluir Cards.`,
+      tecnologias: 'Python, Trello.',
+      linkGithub: 'https://github.com/EmanoelFrt/PyTrello' 
     },
+    {
+      imageSrc: 'Projeto-Portifolio.jpg',
+      imageGif: 'Portifolio.gif',
+      nome: 'Portifólio',
+      descricao: 'Projeto base deste portifólio.',
+      funcionalidades:`• Navegar por seções do site.
+                       • Demonstrar projetos pessoais.
+                       • Efetuar envio de e-mail.`,
+      tecnologias: 'React, CSS, Javascript.'
+    }
     // Adicione mais projetos conforme necessário
   ];
   
@@ -72,6 +88,8 @@ function App() {
       <Banner/>
       <SobreMim/>
       <ListaProjetos projetos={projetos}/>
+      <Footer/>
+      <ScrollToTopButton />
     </div>
   );
 }
