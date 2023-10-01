@@ -63,6 +63,7 @@
     border-radius: 5px;
     cursor: pointer;
     z-index: 1; /* Coloca o botão acima do conteúdo do modal */
+    margin-top: 0px;
   }
 
   .modal-github-button {
@@ -75,6 +76,7 @@
     max-height: 40px;
     text-align: center; /* Centraliza o texto horizontalmente */
     display: flex;
+    align-items: center;
   }
   
   .modal-github-button img {
@@ -96,8 +98,10 @@
     border-radius: 5px;
     z-index: 1; /* Coloca o botão acima do conteúdo do modal */
     max-height: 40px;
+    cursor: auto;
     text-align: center; /* Centraliza o texto horizontalmente */
     display: flex;
+    align-items: center;
   }
   
   .modal-github-button-privado img {
@@ -105,11 +109,6 @@
     max-width: 25px;
     margin-right: 8px; /* Espaçamento à direita da imagem para separá-la do texto */
     margin-top: 5px;
-  }
-  
-  /* Se você tiver algum texto dentro do botão, também pode aplicar line-height a ele */
-  .modal-github-button-privado span {
-    line-height: 40px; /* Centraliza o texto verticalmente */
   }
 
 
@@ -121,6 +120,11 @@
 /* Modal Close Button Hover State */
 .modal-github-button:hover {
   background-color: #3498DB; /* Cor do botão de fechar no hover (pode ser personalizado) */
+}
+
+/* Modal Close Button Hover State */
+.modal-github-button-privado:hover {
+  background-color: #817f7f8f; /* Cor do botão de fechar no hover (pode ser personalizado) */
 }
   
 
