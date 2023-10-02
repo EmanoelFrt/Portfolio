@@ -28,7 +28,7 @@ const SobreMim = () => {
   };
 
   return (
-    <div className="sobre-mim">      
+    <div className="sobre-mim" id="SobreMim">      
       <div className="logo-container-left">
         <div className="logo-sobre-mim">
           <img src={Logo_csharp}/>

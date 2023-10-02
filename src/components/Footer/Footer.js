@@ -34,7 +34,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer">
+    <footer className="footer" id="Contato">
       <div>        
         <h1 className="contact-title">Contato</h1>
       </div>

@@ -4,7 +4,7 @@ import FotoBanner from '../../assets/img/FotoBanner.jpg'; // Importe a imagem co
 
 function Banner() {
   return (
-    <div className="banner">
+    <div className="banner" id="Banner">
       <img className="banner-image"
         src={FotoBanner} // Substitua pelo caminho para a sua foto
         alt="Emanoel Fortuna"
