@@ -48,8 +48,8 @@
   padding: 0 10px; /* Adicione um pouco de espaço nas laterais */
 }
 
-input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="subject"] {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   padding: 10px;

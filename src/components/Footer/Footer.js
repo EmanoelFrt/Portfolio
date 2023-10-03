@@ -1,37 +1,13 @@
 import React, { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import './Footer.css';
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleSubjectChange = (e) => {
-    setSubject(e.target.value);
-  };
-
-  const handleMessageChange = (e) => {
-    setMessage(e.target.value);
-  };
-
-  const handleSendEmail = () => {
-    // Substitua este trecho pelo código real para enviar o e-mail.
-    // Pode ser usado um serviço de envio de e-mails ou uma API de back-end.
-    const emailContent = {
-      to: email,
-      subject: subject,
-      message: message,
-    };
-
-    alert(`E-mail enviado com sucesso: ${JSON.stringify(emailContent)}`);
-    setEmail('');
-    setSubject('');
-    setMessage('');
-  };
+  const [state, handleSubmit] = useForm("mgejpzay");
+  if (state.succeeded) {
+    alert(`Email enviado com sucesso.`);
+  }
 
   return (
     <footer className="footer" id="Contato">
@@ -46,24 +22,43 @@ const Footer = () => {
           <p>(54) 99940-3196</p>
         </div>
         <div className="contact-form">
-          <input
-            type="email"
-            placeholder="Seu E-mail"
-            value={email}
-            onChange={handleEmailChange}
-          />
-          <input
-            type="text"
-            placeholder="Assunto"
-            value={subject}
-            onChange={handleSubjectChange}
-          />
-          <textarea
-            placeholder="Escreva sua mensagem..."
-            value={message}
-            onChange={handleMessageChange}
-          />
-          <button onClick={handleSendEmail}>Enviar Email</button>
+          <form onSubmit={handleSubmit}>
+            <input
+              id="email"
+              type="email" 
+              name="email"
+              placeholder='Seu E-mail'
+            />
+            <ValidationError 
+              prefix="Email" 
+              field="email"
+              errors={state.errors}
+            />
+            <input
+              id="subject"
+              type="subject"
+              name="subject"
+              placeholder='Assunto'
+            />
+            <ValidationError 
+              prefix="Subject" 
+              field="subject"
+              errors={state.errors}
+            />
+            <textarea
+              id="message"
+              name="message"
+              placeholder='Escreva sua mensagem...'
+            />
+            <ValidationError 
+              prefix="Message" 
+              field="message"
+              errors={state.errors}
+            />
+            <button type="submit" disabled={state.submitting}>
+              Enviar Email
+            </button>
+          </form>
         </div>
       </div>
       <div>        
