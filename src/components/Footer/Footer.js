@@ -55,9 +55,11 @@ const Footer = () => {
               field="message"
               errors={state.errors}
             />
-            <button type="submit" disabled={state.submitting}>
-              Enviar Email
-            </button>
+            <div>
+              <button type="submit" disabled={state.submitting}>
+                Enviar Email
+              </button>
+            </div>
           </form>
         </div>
       </div>
