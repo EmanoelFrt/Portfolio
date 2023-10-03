@@ -44,7 +44,7 @@
 }
 
 .modal-header h2 {
-  margin: 0; /* Remova a margem padrão do título para evitar espaços extras */
+  margin: 0;
   align-items: center;
 }
 
@@ -53,28 +53,27 @@
   justify-content: flex-end;
 }
 
-/* Estilize o botão de fechar */
 .modal-close-button {
-    background-color: #ff00008f; /* Cor do botão de fechar (pode ser personalizado) */
+    background-color: #ff00008f;
     color: rgb(207, 206, 206);
     max-height: 40px;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1; /* Coloca o botão acima do conteúdo do modal */
+    z-index: 1;
     margin-top: 0px;
   }
 
   .modal-github-button {
-    background-color: #297fb9c4; /* Cor do botão de fechar (pode ser personalizado) */
+    background-color: #297fb9c4;
     color: rgb(207, 206, 206);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1; /* Coloca o botão acima do conteúdo do modal */
+    z-index: 1;
     max-height: 40px;
-    text-align: center; /* Centraliza o texto horizontalmente */
+    text-align: center;
     display: flex;
     align-items: center;
   }
@@ -82,24 +81,23 @@
   .modal-github-button img {
     max-height: 25px;
     max-width: 25px;
-    margin-right: 8px; /* Espaçamento à direita da imagem para separá-la do texto */
+    margin-right: 8px;
     margin-top: 5px;
   }
   
-  /* Se você tiver algum texto dentro do botão, também pode aplicar line-height a ele */
   .modal-github-button span {
-    line-height: 40px; /* Centraliza o texto verticalmente */
+    line-height: 40px;
   }
 
   .modal-github-button-privado {
-    background-color: #817f7f8f; /* Cor do botão de fechar (pode ser personalizado) */
+    background-color: #817f7f8f;
     color: rgb(207, 206, 206);
     border: none;
     border-radius: 5px;
-    z-index: 1; /* Coloca o botão acima do conteúdo do modal */
+    z-index: 1;
     max-height: 40px;
     cursor: auto;
-    text-align: center; /* Centraliza o texto horizontalmente */
+    text-align: center;
     display: flex;
     align-items: center;
   }
@@ -107,52 +105,44 @@
   .modal-github-button-privado img {
     max-height: 25px;
     max-width: 25px;
-    margin-right: 8px; /* Espaçamento à direita da imagem para separá-la do texto */
+    margin-right: 8px;
     margin-top: 5px;
   }
 
-
-/* Modal Close Button Hover State */
 .modal-close-button:hover {
-    background-color: #cc0000; /* Cor do botão de fechar no hover (pode ser personalizado) */
+    background-color: #cc0000;
 }
 
-/* Modal Close Button Hover State */
 .modal-github-button:hover {
-  background-color: #3498DB; /* Cor do botão de fechar no hover (pode ser personalizado) */
+  background-color: #3498DB;
 }
 
-/* Modal Close Button Hover State */
 .modal-github-button-privado:hover {
-  background-color: #817f7f8f; /* Cor do botão de fechar no hover (pode ser personalizado) */
+  background-color: #817f7f8f;
 }
-  
 
-/* Estilize a classe .modal-flex-container */
 .modal-flex-container {
     display: flex;
-    justify-content: space-between; /* Divide o espaço disponível igualmente entre as partes */
+    justify-content: space-between;
   }
   
-  /* Estilize a classe .modal-left (parte esquerda) */
   .modal-left {
-    flex: 1; /* A parte esquerda ocupa o mesmo espaço da parte direita */
+    flex: 1;
   }
   
-  /* Estilize a classe .modal-right (parte direita) */
   .modal-right {
-    flex: 1; /* A parte direita ocupa o mesmo espaço da parte esquerda */
+    flex: 1;
     display: flex;
-    flex-direction: column; /* Empilhe os elementos verticalmente */
-    justify-content: center; /* Centralize verticalmente */
-    align-items: center; /* Centralize horizontalmente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .modal-right p{
     white-space: pre-line;
     text-align: justify;
     line-height: 1.5;
-    padding: 0 20px; /* Espaçamento interno para melhor leitura */
+    padding: 0 20px;
   }
 
 /* Ocultar a imagem em telas menores */

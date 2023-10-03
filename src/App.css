@@ -15,7 +15,6 @@
   color: white;
 }
 
-/* Contêiner flexível para o texto e a logo */
 .App-content {
   display: flex;
   flex-direction: column;
@@ -23,7 +22,6 @@
   justify-content: center;
 }
 
-/* Estilize a logo */
 .App-logo {
   height: 40vmin;
   pointer-events: none;

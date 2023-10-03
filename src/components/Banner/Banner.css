@@ -1,11 +1,11 @@
 .banner {
-  width: 100%; /* Ocupa toda a largura da tela */
-  height: 100vh; /* Ocupa toda a altura da tela */
+  width: 100%;
+  height: 100vh;
   min-height: 800px;
   display: flex;
-  flex-direction: row; /* Mudamos de column para row para alinhar a imagem à esquerda */
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-start; /* Alinhamos à esquerda */
+  justify-content: flex-start;
 }
 
 .banner-content {
@@ -13,10 +13,10 @@
 }
 
 .banner-image {
-  width: auto; /* Manter a proporção original da imagem */
-  height: 100%; /* Ocupar a altura inteira do container */
-  object-fit: cover; /* Redimensionar a imagem para cobrir a altura */
-  object-position: left; /* Alinhar a imagem à esquerda */
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
 }
 
 .banner-text {
@@ -25,27 +25,26 @@
 }
 
 .banner-text h1 {
-  font-size: 24px; /* Tamanho da fonte do título */
-  margin: 0; /* Remover margem padrão */
-  font-size: clamp(1em, 1em + 1vw, 2.5em); /* Usando a função clamp para controlar o tamanho da fonte */
+  margin: 0;
+  font-size: clamp(1em, 1em + 1vw, 2.5em);
   color: rgba(255, 255, 255, 0.90);
 }
 
 .banner-text p {
-  font-size: 16px; /* Tamanho da fonte do parágrafo */
-  margin: 0; /* Remover margem padrão */
-  font-size: clamp(1em, 1em + 1vw, 2.5em); /* Usando a função clamp para controlar o tamanho da fonte */
+  font-size: 16px;
+  margin: 0;
+  font-size: clamp(1em, 1em + 1vw, 2.5em); 
   font-weight: bold;
-  background: linear-gradient(to right, rgba(40, 122, 222, 0.613), rgb(40, 122, 222)); /* Substitua as cores pelos valores desejados */
+  background: linear-gradient(to right, rgba(40, 122, 222, 0.613), rgb(40, 122, 222));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .typing-text p {
-  overflow: hidden; /* Oculta o texto que está "digitando" */
-  border-right: 3px solid white; /* Adiciona um cursor piscando */
-  white-space: nowrap; /* Impede quebrar linhas */
+  overflow: hidden;
+  border-right: 3px solid white;
+  white-space: nowrap;
   margin: 0;
   padding: 0;
   animation: typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
@@ -76,10 +75,10 @@
     display: none;
   }
   .banner-text {
-    width: 100%; /* Ocupar toda a largura disponível */
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centralizar horizontalmente */
-    justify-content: center; /* Centralizar verticalmente */
+    align-items: center;
+    justify-content: center;
   }
 }

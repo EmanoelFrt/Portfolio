@@ -1,5 +1,5 @@
 import React from 'react';
-import './Projeto.css'; // Importe os estilos
+import './Projeto.css';
 
 const Projeto = ({ imageSrc, onClick }) => {
   const image = require(`../../assets/img/${imageSrc}`);

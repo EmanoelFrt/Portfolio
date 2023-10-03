@@ -11,8 +11,8 @@ header {
 }
 
 .ativaCor {
-    background-color: rgba(0, 0, 0, 0.5); /* Cor vermelha com 50% de transparência */
-    backdrop-filter: blur(10px); /* Adiciona um desfoque de 10px ao background */
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
 }
 
 .logo-header {

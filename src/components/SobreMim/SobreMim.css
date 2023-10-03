@@ -1,28 +1,28 @@
 .sobre-mim {
   width: 98%;    
-  height: 100vh; /* Ocupa a altura total da tela */
+  height: 100vh;
   min-height: 800px;
   text-align: left;
   display: flex;
-  flex-direction: row; /* Mudamos de column para row para alinhar a imagem à esquerda */
+  flex-direction: row;
   align-items: center;
-  position: relative; /* Define a posição relativa para o container principal */
+  position: relative;
 }
 
 .text-container {
-  flex: 1; /* Ocupa todo o espaço disponível no container .sobre-mim */
-  text-align: center; /* Centraliza o conteúdo dentro do container */
-  padding: 0 20px; /* Espaçamento interno para melhor leitura */
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .text-container h1 {
-  font-size: clamp(1em, 1em + 1vw, 2.5em);
+  text-decoration: underline;
 }
 
 .text-container p {
   text-align: justify;
   max-width: 800px;
-  margin: auto; /* Centraliza o conteúdo horizontalmente */
+  margin: auto;
   font-size: clamp(0.5em, 1em + 0.5vw, 2.5em);
   color: rgba(255, 255, 255, 0.85);
 }
@@ -42,17 +42,14 @@
   transition: background-color 0.3s ease;
 }
 
-/* Estilização quando o cursor está sobre o botão */
 .text-container button:hover {
   background-color: #0056b3;
 }
 
-/* Estilização quando o botão é clicado */
 .text-container button:active {
   background-color: #1c87c9;
 }
 
-/* Estilização quando o botão está desativado */
 .text-container button:disabled {
   background-color: #bdc3c7;
   cursor: not-allowed;
@@ -61,7 +58,7 @@
 .logo-container-left {
   display: flex;
   max-width: 300px;
-  flex-wrap: wrap; /* Adicione o flex-wrap para permitir que os itens quebrem para a próxima linha */
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -69,26 +66,25 @@
 .logo-container-right {
   display: flex;
   max-width: 300px;
-  flex-wrap: wrap; /* Adicione o flex-wrap para permitir que os itens quebrem para a próxima linha */
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
 .logo-sobre-mim {
   margin-left: 30px;
-  animation-delay: 0s;
-  margin-bottom: 20px; /* Ajuste o valor conforme desejado */
+  margin-bottom: 20px;
   width: 60px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: moveUpDown 5s infinite alternate ease-in-out;
+  animation: moveUpDown 2s infinite alternate ease-in-out;
 }
 
 .logo-sobre-mim img {
-  width: 80px; /* Aumente o valor conforme desejado */
-  height: 80px; /* Aumente o valor conforme desejado */
+  width: 80px;
+  height: 80px;
 }
 
 @keyframes moveUpDown {
@@ -100,14 +96,12 @@
   }
 }
 
-/* Ocultar a imagem em telas menores */
 @media screen and (max-width: 1000px) {
   .sobre-mim {
     display: inline-grid;
   }
 }
 
-/* Ocultar a imagem em telas menores */
 @media screen and (max-width: 1000px) {
   .logo-container-left,
   .logo-container-right {

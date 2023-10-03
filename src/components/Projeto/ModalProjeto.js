@@ -1,5 +1,5 @@
 import React from 'react';
-import './ModalProjeto.css'; // Importe os estilos do modal
+import './ModalProjeto.css';
 import logoGithub from '../../assets/img/logo-github.png'
 
 const Modal = ({ projeto, onClose }) => {    
@@ -8,7 +8,7 @@ const Modal = ({ projeto, onClose }) => {
     const handleGithubModal = () => {
       if (projeto.linkGithub) 
       {
-        window.open(`${projeto.linkGithub}`, '_blank'); // Substitua com o URL que deseja abrir
+        window.open(`${projeto.linkGithub}`, '_blank');
       }
       else
       {
@@ -17,8 +17,8 @@ const Modal = ({ projeto, onClose }) => {
     };
 
     const buttonGitHub = projeto.linkGithub
-    ? "modal-github-button" // Classe padrão se linkGithub estiver presente
-    : "modal-github-button-privado"; // Classe para quando linkGithub estiver vazio
+    ? "modal-github-button"
+    : "modal-github-button-privado";
 
   return (
     <div className="modal-overlay">

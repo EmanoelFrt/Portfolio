@@ -66,7 +66,6 @@ function App() {
                        • Efetuar envio de e-mail.`,
       tecnologias: 'React, CSS, Javascript.'
     }
-    // Adicione mais projetos conforme necessário
   ];
   
   useEffect(function(){

@@ -29,7 +29,6 @@ const Header = ({ acao }) => {
           <li><a href="#sobre" onClick={() => scrollToElement('SobreMim')}>Sobre</a></li>
           <li><a href="#projetos" onClick={() => scrollToElement('ListaProjetos')}>Projetos</a></li>
           <li><a href="#contato" onClick={() => scrollToElement('Contato')}>Contato</a></li>
-          {/* Você pode adicionar mais links com diferentes targetIds aqui */}
         </ul>
       </div>
     </header>

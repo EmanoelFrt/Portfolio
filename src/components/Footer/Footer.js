@@ -11,8 +11,8 @@ const Footer = () => {
 
   return (
     <footer className="footer" id="Contato">
-      <div>        
-        <h1 className="contact-title">Contato</h1>
+      <div className="contact-title">        
+        <h1>Contato</h1>
       </div>
       <div className="contact-container">
         <div className="contact-info">

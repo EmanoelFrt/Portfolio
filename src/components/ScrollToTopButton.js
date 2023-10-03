@@ -4,7 +4,6 @@ import './ScrollToTopButton.css';
 function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Adiciona um event listener para verificar quando a página é rolada
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -12,7 +11,6 @@ function ScrollToTopButton() {
     };
   }, []);
 
-  // Verifica se o botão deve ser visível com base na posição da rolagem
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setIsVisible(true);
@@ -21,7 +19,6 @@ function ScrollToTopButton() {
     }
   };
 
-  // Função para rolar para o topo da página
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
