@@ -12,38 +12,46 @@ import Logo_react from '../../assets/img/logo-react.png';
 import Logo_nodejs from '../../assets/img/logo-nodejs.png';
 
 const SobreMim = () => {
-  const handleDownload = () => {
-    // URL do arquivo que você deseja baixar
-    const fileUrl = 'https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png';
+  const handleDownload = ( ) => {
+    fetch('https://s3.amazonaws.com/emanoelfortuna.com.br/assets/Curriculo_Emanoel.pdf', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/pdf',
+      },
+    })
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
 
-    // Cria um elemento <a> oculto para iniciar o download
-    const a = document.createElement('a');
-    a.style.display = 'none';
-    a.target = '_blank';
-    a.href = fileUrl;
-    a.download = 'imagem.jpg'; // Nome do arquivo a ser baixado
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'Curriculo_Emanoel.pdf';
+
+        document.body.appendChild(link);
+
+        link.click();
+
+        link.parentNode.removeChild(link);
+      });
   };
 
   return (
     <div className="sobre-mim" id="SobreMim">      
       <div className="logo-container-left">
         <div className="logo-sobre-mim">
-          <img src={Logo_csharp}/>
+          <img src={Logo_csharp} alt='CSharp'/>
         </div>
         <div className="logo-sobre-mim">
-          <img src={Logo_dotnet}/>
+          <img src={Logo_dotnet} alt='DotNet'/>
         </div>
         <div className="logo-sobre-mim">          
-          <img src={Logo_delphi}/>
+          <img src={Logo_delphi} alt='Delphi'/>
         </div>
         <div className="logo-sobre-mim">
-          <img src={Logo_sql}/>
+          <img src={Logo_sql} alt='SQL'/>
         </div>
         <div className="logo-sobre-mim">
-          <img src={Logo_git}/>
+          <img src={Logo_git} alt='Git'/>
         </div>
       </div>          
       <div className="text-container">
@@ -58,19 +66,19 @@ const SobreMim = () => {
       </div>
       <div className="logo-container-right">
         <div className="logo-sobre-mim">
-          <img src={Logo_aws}/>
+          <img src={Logo_aws} alt='AWS'/>
         </div>
         <div className="logo-sobre-mim">
-          <img src={Logo_python}/>
+          <img src={Logo_python} alt='Python'/>
         </div>
         <div className="logo-sobre-mim">
-          <img src={Logo_javascript}/>
+          <img src={Logo_javascript} alt='JavaScript'/>
         </div>
         <div className="logo-sobre-mim">
-          <img src={Logo_react}/>
+          <img src={Logo_react} alt='React'/>
         </div>
         <div className="logo-sobre-mim">
-          <img src={Logo_nodejs}/>
+          <img src={Logo_nodejs} alt='NodeJS'/>
         </div>
       </div>  
     </div>

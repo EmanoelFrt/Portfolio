@@ -1,51 +1,51 @@
 header {
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    border: 0px solid #ccc;
-    transition: all ease-in 0.3s;
-    z-index: 8;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  border: 0px solid #ccc;
+  transition: all ease-in 0.3s;
+  z-index: 8;
 }
 
 .ativaCor {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 .logo-header {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .logo-header img {
-    width: 60px;
-    height: 60px;
-    border: 0px solid #ccc;
+  width: 60px;
+  height: 60px;
+  border: 0px solid #ccc;
 }
 
 .menu {
-    margin-right: 30px;
-    border: 0px solid #ccc;
+  margin-right: 30px;
+  border: 0px solid #ccc;
 }
 
 .menu ul {
-    display: flex;
+  display: flex;
 }
 
 .menu li {
-    list-style: none;
-    margin-left: 20px;
+  list-style: none;
+  margin-left: 20px;
 }
 
 .menu li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(40, 122, 222);
-    opacity: 1;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(40, 122, 222);
+  opacity: 1;
 }
 
 .menu li a:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
