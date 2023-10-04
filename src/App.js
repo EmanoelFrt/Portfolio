@@ -28,7 +28,7 @@ function App() {
       imageSrc: 'Projeto-SyncSistemas.jpg',
       imageGif: 'SyncSistemas.gif',
       nome: 'Sync Sistemas',
-      descricao: 'Sistema ERP/PDV financeiro totalmente desenvolvido em .NET.',
+      descricao: 'Sistema ERP/PDV financeiro totalmente desenvolvido em .NET e C#.',
       funcionalidades:`• Realizar Vendas.
                        • Gestão Financeira.
                        • Controle de Estoque.
@@ -60,7 +60,7 @@ function App() {
       imageSrc: 'Projeto-Portifolio.jpg',
       imageGif: 'Portifolio.gif',
       nome: 'Portifólio',
-      descricao: 'Projeto base deste portifólio.',
+      descricao: 'Projeto base deste portifólio. Desenvolvido totalmente em React.',
       funcionalidades:`• Navegar por seções do site.
                        • Demonstrar projetos pessoais.
                        • Efetuar envio de e-mail.`,
