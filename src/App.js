@@ -64,7 +64,8 @@ function App() {
       funcionalidades:`• Navegar por seções do site.
                        • Demonstrar projetos pessoais.
                        • Efetuar envio de e-mail.`,
-      tecnologias: 'React, CSS, Javascript.'
+      tecnologias: 'React, CSS, Javascript.',
+      linkGithub: 'https://github.com/EmanoelFrt/Portifolio'
     }
   ];
   
