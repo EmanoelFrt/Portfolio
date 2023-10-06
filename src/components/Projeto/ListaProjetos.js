@@ -18,7 +18,7 @@ const ListaProjetos = ({ projetos }) => {
 
   return (
     <div id="ListaProjetos">
-      <h1 className='projeto-list-titulo'>Projetos</h1>
+      <h1>Projetos</h1>
       <div className="projeto-list">
         {projetos.map((projeto, index) => (
           <Projeto

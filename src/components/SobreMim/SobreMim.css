@@ -15,10 +15,6 @@
   padding: 0 20px;
 }
 
-.text-container h1 {
-  text-decoration: underline;
-}
-
 .text-container p {
   text-align: justify;
   max-width: 800px;

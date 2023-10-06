@@ -33,7 +33,7 @@
 .banner-text p {
   font-size: 16px;
   margin: 0;
-  font-size: clamp(1em, 1em + 1vw, 2.5em); 
+  font-size: clamp(0.8em, 0.8em + 1vw, 2.5em); 
   font-weight: bold;
   background: linear-gradient(to right, rgba(40, 122, 222, 0.613), rgb(40, 122, 222));
   -webkit-background-clip: text;
@@ -76,6 +76,7 @@
   }
   .banner-text {
     width: 100%;
+    padding: 0px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
