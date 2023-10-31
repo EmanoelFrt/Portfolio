@@ -1,4 +1,4 @@
-# Portifólio
+# Portfólio
 Site utilizado para apresentar habilidades, experiências e conhecimentos.
 
 # 💻 Funcionalidades
