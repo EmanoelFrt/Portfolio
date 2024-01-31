@@ -57,15 +57,15 @@ function App() {
       linkGithub: 'https://github.com/EmanoelFrt/PyTrello' 
     },
     {
-      imageSrc: 'Projeto-Portifolio.jpg',
-      imageGif: 'Portifolio.gif',
+      imageSrc: 'Projeto-Portfolio.jpg',
+      imageGif: 'Portfolio.gif',
       nome: 'Portifólio',
       descricao: 'Projeto base deste portifólio. Desenvolvido totalmente em React.',
       funcionalidades:`• Navegar por seções do site.
                        • Demonstrar projetos pessoais.
                        • Efetuar envio de e-mail.`,
       tecnologias: 'React, CSS, Javascript.',
-      linkGithub: 'https://github.com/EmanoelFrt/Portifolio'
+      linkGithub: 'https://github.com/EmanoelFrt/Portfolio'
     }
   ];
   
