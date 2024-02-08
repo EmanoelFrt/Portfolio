@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
       <div>        
-        <h1 className="contact-footer">© Copyright 2023 Emanoel Lucas Fortuna. Todos os direitos reservados.</h1>
+        <h1 className="contact-footer">© Copyright 2024 Emanoel Lucas Fortuna. Todos os direitos reservados.</h1>
       </div>
     </footer>
   );

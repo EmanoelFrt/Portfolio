@@ -59,8 +59,8 @@ function App() {
     {
       imageSrc: 'Projeto-Portfolio.jpg',
       imageGif: 'Portfolio.gif',
-      nome: 'Portifólio',
-      descricao: 'Projeto base deste portifólio. Desenvolvido totalmente em React.',
+      nome: 'Portfólio',
+      descricao: 'Projeto base deste portfólio. Desenvolvido totalmente em React.',
       funcionalidades:`• Navegar por seções do site.
                        • Demonstrar projetos pessoais.
                        • Efetuar envio de e-mail.`,
