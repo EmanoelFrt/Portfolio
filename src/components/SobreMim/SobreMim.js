@@ -57,10 +57,10 @@ const SobreMim = () => {
       <div className="text-container">
         <h1>Sobre mim</h1>
         <p>
-          Sou desenvolvedor Delphi, .Net e AWS há 4 anos. Como freelancer,
-          participei de projetos em .Net, Python e React. Sempre foco no
-          desempenho de minhas aplicações e na interface amigável para o
-          usuário.
+        Sou desenvolvedor com 5 anos de experiência em Delphi, SQL, C#, .Net e
+        AWS. Trabalhei em projetos como freelancer utilizando .Net, Python e
+        React. Sempre foco em criar aplicações robustas com interfaces amigáveis
+        ao usuário, buscando a excelência técnica e a satisfação do cliente.
         </p>
         <button onClick={handleDownload}>Baixar Currículo</button>
       </div>

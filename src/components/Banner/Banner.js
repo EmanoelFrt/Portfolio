@@ -10,7 +10,7 @@ function Banner() {
         alt="Emanoel Fortuna"
       />
       <div className="banner-text">
-        <h1>Emanoel Lucas Fortuna</h1>
+        <h1>Emanoel Fortuna</h1>
         <div className="typing-text">
           <p>Desenvolvedor Delphi | C# | .NET | SQL | AWS</p>
         </div>
